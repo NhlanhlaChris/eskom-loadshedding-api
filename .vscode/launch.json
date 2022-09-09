@@ -31,8 +31,8 @@
         },
         {
             "request": "launch",
-            "name": "Launch Program",
-            "type": "pwa-node",
+            "name": "untimeExecutable",
+            "type": "node",
             "program": "${workspaceFolder}/main.ts",
             "cwd": "${workspaceFolder}",
             "runtimeExecutable": "deno",

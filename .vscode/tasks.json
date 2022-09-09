@@ -1,0 +1,76 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "deno",
+			"command": "compile",
+			"problemMatcher": [
+				"$deno"
+			],
+			"group": "build",
+			"label": "deno: compile"
+		},
+		{
+			"type": "deno",
+			"command": "test",
+			"problemMatcher": [
+				"$deno-test"
+			],
+			"group": "test",
+			"label": "deno: test"
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: install",
+			"detail": "install dependencies from package"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+			"label": "tsc: build - tsconfig.json"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"option": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"group": "build",
+			"label": "tsc: watch - tsconfig.json"
+		},
+		{
+			"type": "deno",
+			"command": "run",
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: run"
+		},
+		{
+			"type": "deno",
+			"command": "cache",
+			"problemMatcher": [
+				"$deno"
+			],
+			"group": "build",
+			"label": "deno: cache"
+		},
+		{
+			"type": "deno",
+			"command": "bundle",
+			"problemMatcher": [
+				"$deno"
+			],
+			"group": "build",
+			"label": "deno: bundle"
+		}
+	]
+}
